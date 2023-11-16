@@ -1,9 +1,20 @@
+import { Component } from 'react';
 import Feedback from './Feedback';
 
-export const App = () => {
-  return (
-    <div>
-      <Feedback />
-    </div>
-  );
-};
+class App extends Component {
+  state = {
+    good: 1,
+    neutral: 30,
+    bad: 20,
+  };
+
+  render() {
+    return (
+      <div>
+        <Feedback state={this.state} />
+      </div>
+    );
+  }
+}
+
+export default App;

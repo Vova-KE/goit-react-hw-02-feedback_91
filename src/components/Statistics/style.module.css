@@ -1,0 +1,7 @@
+.title {
+  margin-bottom: 10px;
+}
+
+.statItem:not(:last-child) {
+  padding-bottom: 5px;
+}
