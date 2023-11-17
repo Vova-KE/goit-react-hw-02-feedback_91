@@ -5,14 +5,14 @@ import style from './style.module.css';
 const Section = ({ title, children }) => {
   return (
     <section>
-      {title && <h2 className={style.title}>{title}</h2>}
+      {<h2 className={style.title}>{title}</h2>}
       {children}
     </section>
   );
 };
 
 Section.propTypes = {
-  title: PropTypes.string,
+  title: PropTypes.string.isRequired,
   children: PropTypes.node,
 };
 
